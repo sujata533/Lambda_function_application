@@ -1,0 +1,17 @@
+import pandas as pd
+d={'val':[123,456,789]}
+df=pd.DataFrame(d)
+df
+
+
+df.apply(lambda x: x+100)
+df
+
+
+
+df.apply(lambda x: x+100)
+df
+
+
+df['sum']=df.apply(lambda x: x['new']+1000,axis=1)  #apply lambda function to the specific column
+df
